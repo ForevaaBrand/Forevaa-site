@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forevaa Brand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+        }
+        h1 {
+            margin: 10px 0 0;
+            font-size: 2em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .product {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product select, .product button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        .product select {
+            background-color: #222;
+            color: #fff;
+        }
+        .product button {
+            background-color: #fdd835;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #fff000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="B1FD3DCE-CBB6-44CB-9D04-D74A87C5805E.png" alt="Forevaa Logo">
+    <h1>Forevaa Collection</h1>
+</header>
+
+<section class="products">
+    <div class="product">
+        <img src="forevaa-striped-blue.png" alt="Forevaa Striped Tee Blue">
+        <h2>Striped Tee - Blue</h2>
+        <p>$25</p>
+        <select>
+            <option>Select Size</option>
+            <option>XS</option><option>S</option><option>M</option>
+            <option>L</option><option>XL</option><option>2X</option><option>3X</option>
+        </select>
+        <button onclick="alert('Added to cart!')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="forevaa-striped-red.png" alt="Forevaa Striped Tee Red">
+        <h2>Striped Tee - Red</h2>
+        <p>$25</p>
+        <select>
+            <option>Select Size</option>
+            <option>XS</option><option>S</option><option>M</option>
+            <option>L</option><option>XL</option><option>2X</option><option>3X</option>
+        </select>
+        <button onclick="alert('Added to cart!')">Add to Cart</button>
+    </div>
+</section>
+
+</body>
+</html>
