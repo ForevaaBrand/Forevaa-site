@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forevaa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(255, 215, 0, 0.1);
+      z-index: 10;
+    }
+    header img {
+      height: 50px;
+      margin-right: 15px;
+    }
+    header h1 {
+      color: #FFD700;
+      font-size: 1.8em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+    }
+    .hero h2 {
+      font-size: 2.8em;
+      color: #FFD700;
+      text-shadow: 0 0 10px #FFD70044;
+      animation: pulse 3s infinite;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { text-shadow: 0 0 10px #FFD70055; }
+      50% { text-shadow: 0 0 20px #FFD700aa; }
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product {
+      background-color: #111;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .product h3 {
+      color: #FFD700;
+      margin-top: 15px;
+      font-size: 1.3em;
+    }
+
+    .product p {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    .button {
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 18px;
+      margin-top: 10px;
+      border: none;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #fff200;
+      transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+      .product h3 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="B1FD3DCE-CBB6-44CB-9D04-D74A87C5805E.png" alt="Forevaa Logo">
+    <h1>Forevaa</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Born Different. Built Forevaa.</h2>
+    <p>Stand out. Be bold. Shop the drop.</p>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="Forevaa-Striped-Tee-Blue.png" alt="Striped Tee Blue">
+      <h3>Striped Tee - Blue</h3>
+      <p>$25</p>
+      <p>Sizes: XS - 3X</p>
+      <button class="button">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="Forevaa-Striped-Tee-Red.png" alt="Striped Tee Red">
+      <h3>Striped Tee - Red</h3>
+      <p>$25</p>
+      <p>Sizes: XS - 3X</p>
+      <button class="button">Add to Cart</button>
+    </div>
+  </section>
+
+</body>
+</html>
