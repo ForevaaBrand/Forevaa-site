@@ -1,152 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forevaa — Born Different</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Reset + base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      background-color: #0d0d0d;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #FFD700;
-      box-shadow: 0 2px 15px rgba(255, 0, 0, 0.2);
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo-img {
-      height: 55px;
-      margin-right: 15px;
-      filter: drop-shadow(0 0 8px red);
-      border-radius: 4px;
-    }
-
-    .logo-text {
-      font-family: 'Anton', sans-serif;
-      font-size: 30px;
-      color: #FFD700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin-left: 30px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #FFD700;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
-    }
-
-    .hero h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 3.5rem;
-      color: #FFD700;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #ccc;
-      font-style: italic;
-    }
-
-    .btn {
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #FFD700;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 4px;
-      display: inline-block;
-      font-family: 'Montserrat', sans-serif;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #e6c200;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-top: 15px;
-      }
-
-      nav a {
-        margin-left: 0;
-        margin-right: 20px;
-        display: inline-block;
-      }
-
-      .hero h1 {
-        font-size: 2.2rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Forevaa Brand</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+        }
+        h1 {
+            margin: 10px 0 0;
+            font-size: 2em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .product {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product select, .product button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        .product select {
+            background-color: #222;
+            color: #fff;
+        }
+        .product button {
+            background-color: #fdd835;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #fff000;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo-area">
-      <img src="images/logo.png" alt="Forevaa Logo" class="logo-img">
-      <span class="logo-text">Forevaa</span>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+<header>
+    <img src="B1FD3DCE-CBB6-44CB-9D04-D74A87C5805E.png" alt="Forevaa Logo">
+    <h1>Forevaa Collection</h1>
+</header>
 
-  <section class="hero">
-    <h1>Born Different. Built Forevaa.</h1>
-    <p>The Black Sheep Movement</p>
-    <a href="#" class="btn">Shop the Collection</a>
-  </section>
+<section class="products">
+    <div class="product">
+        <img src="forevaa-striped-blue.png" alt="Forevaa Striped Tee Blue">
+        <h2>Striped Tee - Blue</h2>
+        <p>$25</p>
+        <select>
+            <option>Select Size</option>
+            <option>XS</option><option>S</option><option>M</option>
+            <option>L</option><option>XL</option><option>2X</option><option>3X</option>
+        </select>
+        <button onclick="alert('Added to cart!')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="forevaa-striped-red.png" alt="Forevaa Striped Tee Red">
+        <h2>Striped Tee - Red</h2>
+        <p>$25</p>
+        <select>
+            <option>Select Size</option>
+            <option>XS</option><option>S</option><option>M</option>
+            <option>L</option><option>XL</option><option>2X</option><option>3X</option>
+        </select>
+        <button onclick="alert('Added to cart!')">Add to Cart</button>
+    </div>
+</section>
 
 </body>
 </html>
